@@ -140,6 +140,19 @@
                 height: 90px;
             }
         }
+
+        /* Extra area for more ads */
+        .extra-ads-area {
+            min-height: 150vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 50px 0;
+            border-top: 1px solid #e2e8f0;
+        }
     </style>
 </head>
 <body>
@@ -199,7 +212,49 @@
             </svg>
         </a>
 
+    </div>
 
+    <!-- Extra scrollable area with more ad spaces -->
+    <div class="extra-ads-area">
+        <h3 style="color: #94a3b8; font-weight: 400; margin: 0; text-transform: uppercase; letter-spacing: 2px;">Sponsored Content</h3>
+        
+        <div class="ad-container">
+            <div class="ad-placeholder">Ad Space 1 (728x90 or 320x100)</div>
+        </div>
+
+        <div class="ad-container">
+            <script>
+              atOptions = {
+                'key' : '064857bafa8f966a8ea7bea4a9171b18',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/064857bafa8f966a8ea7bea4a9171b18/invoke.js"></script>
+        </div>
+
+        <div class="ad-container">
+            <div class="ad-placeholder">Ad Space 3 (728x90 or 320x100)</div>
+        </div>
+
+        <div class="ad-container">
+            <script>
+              atOptions = {
+                'key' : '00cd3a631a42cec301e8a7b1e4910743',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+            </script>
+            <script src="https://www.highperformanceformat.com/00cd3a631a42cec301e8a7b1e4910743/invoke.js"></script>
+        </div>
+
+        <div class="ad-container">
+            <div class="ad-placeholder">Ad Space 5 (Native Banner)</div>
+        </div>
     </div>
 
     <script>
