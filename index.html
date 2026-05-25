@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldTV - Next-Gen Streaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#gradient-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <defs>
+                        <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#8b5cf6" />
+                            <stop offset="100%" stop-color="#3b82f6" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+                <span>WorldTV</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge">V2.0 Now Available</div>
+                    <h1>Unlock Endless <br> <span class="text-gradient">Entertainment</span></h1>
+                    <p>Transform your Android device into a global streaming powerhouse. Thousands of channels, movies, and shows in stunning 4K Ultra HD—all at your fingertips.</p>
+                    
+                    <div class="download-section">
+                        <button id="downloadBtn" class="btn btn-primary pulse">
+                            <span class="btn-text">Download APK Now</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <div class="btn-shine"></div>
+                        </button>
+                        
+                        <div id="countdownContainer" class="countdown-card hidden">
+                            <div class="spinner-wrapper">
+                                <svg class="spinner" viewBox="0 0 50 50">
+                                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="4"></circle>
+                                </svg>
+                                <span class="timer-value" id="timer">20</span>
+                            </div>
+                            <div class="countdown-text">
+                                <h4>Preparing Download...</h4>
+                                <p>Please support our sponsor by keeping the new tab open.</p>
+                            </div>
+                        </div>
+
+                        <a id="finalDownloadBtn" href="WorldTV.apk" class="btn btn-success hidden" download="WorldTV.apk">
+                            <span class="btn-text">Download Ready</span>
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <div class="btn-shine"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal">
+                    <div class="mockup-container" id="mockupContainer">
+                        <div class="mockup-frame">
+                            <img src="tv_mockup.png" alt="WorldTV Interface Mockup" class="mockup-image">
+                            <div class="mockup-glare"></div>
+                        </div>
+                        <div class="mockup-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-header reveal">
+                <h2>Why Choose <span class="text-gradient">WorldTV</span>?</h2>
+                <p>Designed for the ultimate viewing experience.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass reveal delay-1">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Massive Library</h3>
+                    <p>Over 10,000+ live channels and constantly updated VODs from all around the globe.</p>
+                </div>
+                <div class="feature-card glass reveal delay-2">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Zero Buffering</h3>
+                    <p>Our ultra-fast decentralized servers ensure a smooth, uninterrupted playback.</p>
+                </div>
+                <div class="feature-card glass reveal delay-3">
+                    <div class="feature-icon">📺</div>
+                    <h3>4K HDR Support</h3>
+                    <p>Experience movies and shows exactly as the directors intended with true 4K HDR quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="steps-section">
+            <div class="section-header reveal">
+                <h2>How to <span class="text-gradient">Install</span></h2>
+            </div>
+            <div class="steps-container reveal">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Download the APK</h4>
+                        <p>Click the download button above and wait 20s to receive the secure file.</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Enable Unknown Sources</h4>
+                        <p>Go to your Android Settings > Security and enable "Install from Unknown Sources".</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Install & Enjoy</h4>
+                        <p>Open the APK, tap install, and start streaming your favorite content instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                    <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+                <span>WorldTV</span>
+            </div>
+            <p>&copy; 2026 WorldTV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
