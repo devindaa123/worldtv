@@ -1,0 +1,6 @@
+```txt
+User-agent: *
+Allow: /
+
+Sitemap: https://worldtv-p6ws.vercel.app/sitemap.xml
+```
